@@ -1,5 +1,5 @@
 from gunicorn.app.base import Application
-from gunicorn.config import Config
+
 
 class FlaskApplication(Application):
     def __init__(self, app, options=None):

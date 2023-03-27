@@ -1,5 +1,6 @@
 from flask import Flask
 
+
 def create_app():
     app = Flask(__name__)
     # Flask 애플리케이션 객체 생성

@@ -2,6 +2,7 @@ from flask import Blueprint
 
 bp = Blueprint('main', __name__)
 
+
 @bp.route('/')
 def index():
-    return 'Hello, world!'
+    return 'Hello, world! I am Connor Kwon'

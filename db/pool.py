@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
-from . import db
+import db
+
 
 def init_db(app):
     db_uri = app.config['DATABASE_URI']

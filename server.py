@@ -1,8 +1,8 @@
-from app import create_app
+from app.init import create_app
 from db.pool import init_db
-from gunicorn.config import Config
 from gunicorn.app.base import BaseApplication
 from gunicorn import util
+
 
 class FlaskApplication(BaseApplication):
     def __init__(self, app, options=None):
@@ -17,6 +17,7 @@ class FlaskApplication(BaseApplication):
 
     def load(self):
         return self.application
+
 
 if __name__ == '__main__':
     app = create_app()
